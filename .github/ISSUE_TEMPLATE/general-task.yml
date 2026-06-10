@@ -8,7 +8,7 @@ body:
     attributes:
       label: Goal
       description: What needs to be achieved?
-      placeholder: Example: Prepare the approved list of course categories.
+      placeholder: Example Prepare the approved list of course categories.
     validations:
       required: true
 
@@ -17,7 +17,7 @@ body:
     attributes:
       label: Expected result
       description: What should exist when this is done?
-      placeholder: Example: A document or spreadsheet with the final approved categories.
+      placeholder: Example A document or spreadsheet with the final approved categories.
     validations:
       required: true
 
@@ -26,7 +26,7 @@ body:
     attributes:
       label: Owner
       description: Who is responsible for moving this forward?
-      placeholder: Example: Marketing team / @username
+      placeholder: Example Marketing team / @username
     validations:
       required: true
 
@@ -35,7 +35,7 @@ body:
     attributes:
       label: Reviewer or approver
       description: Who confirms this is complete?
-      placeholder: Example: @project-lead
+      placeholder: Example @project-lead
     validations:
       required: false
 
@@ -44,7 +44,7 @@ body:
     attributes:
       label: Due date
       description: When is this needed?
-      placeholder: Example: 2026-06-20
+      placeholder: Example 2026-06-20
     validations:
       required: false
 

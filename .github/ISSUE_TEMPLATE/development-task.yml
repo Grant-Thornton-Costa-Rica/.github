@@ -8,7 +8,7 @@ body:
     attributes:
       label: Goal
       description: What technical result should be achieved?
-      placeholder: Example: Create the backend endpoint to list active courses.
+      placeholder: Example Create the backend endpoint to list active courses.
     validations:
       required: true
 
@@ -17,7 +17,7 @@ body:
     attributes:
       label: Context
       description: Why is this needed?
-      placeholder: Example: The admin portal needs to show courses managed by Marketing.
+      placeholder: Example The admin portal needs to show courses managed by Marketing.
     validations:
       required: true
 
@@ -52,7 +52,7 @@ body:
     id: owner
     attributes:
       label: Owner
-      placeholder: Example: @developer
+      placeholder: Example @developer
     validations:
       required: true
 
@@ -60,7 +60,7 @@ body:
     id: reviewer
     attributes:
       label: Reviewer
-      placeholder: Example: @tech-lead
+      placeholder: Example @tech-lead
     validations:
       required: false
 
@@ -68,6 +68,6 @@ body:
     id: dependencies
     attributes:
       label: Dependencies / blockers
-      placeholder: Example: Needs database model approved first.
+      placeholder: Example Needs database model approved first.
     validations:
       required: false

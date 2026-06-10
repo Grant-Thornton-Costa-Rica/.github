@@ -8,7 +8,7 @@ body:
     attributes:
       label: What happened?
       description: Describe the bug clearly.
-      placeholder: Example: Login fails when using a valid user in QA.
+      placeholder: Example Login fails when using a valid user in QA.
     validations:
       required: true
 
@@ -28,7 +28,7 @@ body:
     id: expected
     attributes:
       label: Expected behavior
-      placeholder: Example: User should be redirected to the dashboard.
+      placeholder:  User should be redirected to the dashboard.
     validations:
       required: true
 
@@ -36,7 +36,7 @@ body:
     id: actual
     attributes:
       label: Actual behavior
-      placeholder: Example: User stays on login page and sees a CORS error.
+      placeholder:  User stays on login page and sees a CORS error.
     validations:
       required: true
 
