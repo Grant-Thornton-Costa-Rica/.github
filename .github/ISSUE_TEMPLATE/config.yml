@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
   - name: Project documentation
-    url: https://github.com/YOUR_ORG/YOUR_REPO/wiki
+    url: https://github.com/Grant-Thornton-Costa-Rica/.github/wiki
     about: Check the project documentation before creating a new issue.
