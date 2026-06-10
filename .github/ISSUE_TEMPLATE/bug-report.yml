@@ -1,0 +1,61 @@
+name: Bug Report
+description: Report an error, broken behavior, or unexpected result
+title: "[Bug]: "
+labels: ["type: bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug clearly.
+      placeholder: Example: Login fails when using a valid user in QA.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to login page
+        2. Enter valid credentials
+        3. Click Login
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: Example: User should be redirected to the dashboard.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: Example: User stays on login page and sees a CORS error.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Local
+        - QA
+        - Production
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Screenshots, logs, console errors, network errors, etc.
+    validations:
+      required: false

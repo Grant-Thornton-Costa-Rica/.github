@@ -1,0 +1,57 @@
+name: General Task
+description: For non-technical or mixed project tasks
+title: "[Task]: "
+labels: ["type: task"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What needs to be achieved?
+      placeholder: Example: Prepare the approved list of course categories.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: Expected result
+      description: What should exist when this is done?
+      placeholder: Example: A document or spreadsheet with the final approved categories.
+    validations:
+      required: true
+
+  - type: input
+    id: owner
+    attributes:
+      label: Owner
+      description: Who is responsible for moving this forward?
+      placeholder: Example: Marketing team / @username
+    validations:
+      required: true
+
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reviewer or approver
+      description: Who confirms this is complete?
+      placeholder: Example: @project-lead
+    validations:
+      required: false
+
+  - type: input
+    id: due-date
+    attributes:
+      label: Due date
+      description: When is this needed?
+      placeholder: Example: 2026-06-20
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / links
+      description: Add any extra context, documents, screenshots, or references.
+    validations:
+      required: false
