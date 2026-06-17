@@ -1,10 +1,10 @@
 # Organization GitHub Defaults
 
-This repository contains shared GitHub templates and process files used across the organization.
+Este repositorio contiene GitHub templates y archivos de documentación estándar de los proyectos.
 
-These defaults apply to repositories that do not define their own local versions.
+Estos estándares aplican a repositorios que no definen sus propias versiones locales.
 
-## Included files
+## Archivos incluídos
 
 - Issue templates
 - Pull request template
@@ -14,4 +14,17 @@ These defaults apply to repositories that do not define their own local versions
 
 ## Override behavior
 
-A repository can override these defaults by adding its own file in the correct location.
+Un repositorio puede saltarse estos estándares al agregar sus propios archivos en una carpeta .github dentro de su repositorio.
+
+## Team Standards
+
+Los estándares organizacionales que seguimos son los siguientes:
+
+Los releases se hacen en días específicos siguiendo el proceso documentado en:
+- [Release Process](https://github.com/Grant-Thornton-Costa-Rica/.github/blob/main/.github/docs/release-process.md)
+
+Los code reviews deben seguir lo documentado en:
+- [Code Review Guidelines](https://github.com/Grant-Thornton-Costa-Rica/.github/blob/main/.github/docs/code-review-guidelines.md)
+
+Todo QA debe seguir al menos este checklist:
+- [QA Checklist](https://github.com/Grant-Thornton-Costa-Rica/.github/blob/main/.github/docs/qa-checklist.md)
