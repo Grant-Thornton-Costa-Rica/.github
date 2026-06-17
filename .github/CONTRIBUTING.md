@@ -1,28 +1,28 @@
-# Contributing Guidelines
+# Guía de contribución
 
-## Work tracking
+## Seguimiento del trabajo
 
-All work must be tracked in GitHub Issues or GitHub Projects.
+Todo el trabajo debe registrarse en GitHub Issues o GitHub Projects.
 
-Before starting work, an issue should have:
+Antes de iniciar una tarea, el issue debe tener:
 
-- Clear goal
-- Owner
-- Acceptance criteria or expected result
-- Priority
-- Reviewer or approver
-- Known blockers or dependencies
+* Objetivo claro
+* Owner
+* Acceptance criteria o resultado esperado
+* Prioridad
+* Reviewer o approver
+* Blockers o dependencias conocidas
 
 ## Branch naming
 
-Use:
+Usar:
 
-- `feature/short-description`
-- `fix/short-description`
-- `chore/short-description`
-- `docs/short-description`
+* `feature/short-description`
+* `fix/short-description`
+* `chore/short-description`
+* `docs/short-description`
 
-Example:
+Ejemplo:
 
 ```text
 feature/course-admin-crud
@@ -30,20 +30,21 @@ feature/course-admin-crud
 
 ## Pull requests
 
-Every code change should be submitted through a pull request.
+Todo cambio de código debe enviarse mediante un pull request.
 
-A pull request should:
+Un pull request debe:
 
-- Link to the related issue
-- Explain what changed
-- Explain how it was tested
-- Be reviewed before merge
+* Estar vinculado al issue relacionado
+* Explicar qué cambió
+* Explicar cómo fue probado
+* Ser revisado antes del merge
+* Usar [PR Template](https://github.com/Grant-Thornton-Costa-Rica/.github/blob/main/.github/PULL_REQUEST_TEMPLATE.md)
 
 ## Definition of Done
 
-A task is done when:
+Una tarea se considera terminada cuando:
 
-- Acceptance criteria are met
-- Changes are reviewed
-- Feature works in the target environment
-- Documentation/configuration was updated when needed
+* Se cumplen los criterios de aceptación
+* Los cambios fueron revisados
+* La feature funciona en el target environment
+* La documentación o configuración fue actualizada cuando corresponde
