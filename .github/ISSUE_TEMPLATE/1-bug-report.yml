@@ -4,7 +4,7 @@ title: "[Bug]: "
 labels: ["type: bug"]
 body:
 
-* type: textarea
+- type: textarea
   id: description
   attributes:
   label: ¿Qué ocurrió?
@@ -13,7 +13,7 @@ body:
   validations:
   required: true
 
-* type: textarea
+- type: textarea
   id: steps
   attributes:
   label: Steps to reproduce
@@ -25,7 +25,7 @@ body:
   validations:
   required: true
 
-* type: textarea
+- type: textarea
   id: expected
   attributes:
   label: Expected behavior
@@ -33,7 +33,7 @@ body:
   validations:
   required: true
 
-* type: textarea
+- type: textarea
   id: actual
   attributes:
   label: Actual behavior
@@ -41,7 +41,7 @@ body:
   validations:
   required: true
 
-* type: dropdown
+- type: dropdown
   id: environment
   attributes:
   label: Environment
@@ -53,7 +53,7 @@ body:
   validations:
   required: true
 
-* type: textarea
+- type: textarea
   id: evidence
   attributes:
   label: Evidence
