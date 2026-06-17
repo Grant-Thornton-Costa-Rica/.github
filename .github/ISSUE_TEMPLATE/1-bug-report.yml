@@ -1,62 +1,61 @@
 name: Bug Report
-description: Reportar un error, comportamiento roto o resultado inesperado
+description: Report an error, broken behavior, or unexpected result
 title: "[Bug]: "
 labels: ["type: bug"]
 body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug clearly.
+      placeholder: Example Login fails when using a valid user in QA.
+    validations:
+      required: true
 
-* type: textarea
-  id: description
-  attributes:
-  label: ¿Qué ocurrió?
-  description: Describe el bug claramente.
-  placeholder: Ejemplo: El login falla al usar un usuario válido en QA.
-  validations:
-  required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to login page
+        2. Enter valid credentials
+        3. Click Login
+        4. See error
+    validations:
+      required: true
 
-* type: textarea
-  id: steps
-  attributes:
-  label: Steps to reproduce
-  placeholder: |
-  1. Ir a la página de login
-  2. Ingresar credenciales válidas
-  3. Hacer click en Login
-  4. Ver el error
-  validations:
-  required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder:  User should be redirected to the dashboard.
+    validations:
+      required: true
 
-* type: textarea
-  id: expected
-  attributes:
-  label: Expected behavior
-  placeholder: El usuario debería ser redirigido al dashboard.
-  validations:
-  required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder:  User stays on login page and sees a CORS error.
+    validations:
+      required: true
 
-* type: textarea
-  id: actual
-  attributes:
-  label: Actual behavior
-  placeholder: El usuario permanece en la página de login y ve un error de CORS.
-  validations:
-  required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Local
+        - QA
+        - Production
+        - Other
+    validations:
+      required: true
 
-* type: dropdown
-  id: environment
-  attributes:
-  label: Environment
-  options:
-  - Local
-  - QA
-  - Production
-  - Other
-  validations:
-  required: true
-
-* type: textarea
-  id: evidence
-  attributes:
-  label: Evidence
-  description: Screenshots, logs, console errors, network errors, etc.
-  validations:
-  required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Screenshots, logs, console errors, network errors, etc.
+    validations:
+      required: false
