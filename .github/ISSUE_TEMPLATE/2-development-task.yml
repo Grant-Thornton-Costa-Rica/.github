@@ -1,73 +1,73 @@
-name: Development Task
-description: For coding, configuration, database, API, frontend, backend, or DevOps work
+name: Tarea de Desarrollo
+description: Para trabajo de codificación, configuración, base de datos, API, frontend, backend o DevOps
 title: "[Dev]: "
 labels: ["type: development"]
 body:
   - type: textarea
     id: goal
     attributes:
-      label: Goal
-      description: What technical result should be achieved?
-      placeholder: Example Create the backend endpoint to list active courses.
+      label: Objetivo
+      description: ¿Qué resultado técnico se debe alcanzar?
+      placeholder: "Ejemplo: Crear el endpoint de backend para listar los cursos activos."
     validations:
       required: true
 
   - type: textarea
     id: context
     attributes:
-      label: Context
-      description: Why is this needed?
-      placeholder: Example The admin portal needs to show courses managed by Marketing.
+      label: Contexto
+      description: ¿Por qué es necesario?
+      placeholder: "Ejemplo: El portal de administración necesita mostrar los cursos gestionados por Marketing."
     validations:
       required: true
 
   - type: textarea
     id: acceptance-criteria
     attributes:
-      label: Acceptance criteria
-      description: What must be true for this task to be considered done?
+      label: Criterios de aceptación
+      description: ¿Qué debe cumplirse para que esta tarea se considere completada?
       placeholder: |
-        - [ ] Endpoint returns only active courses
-        - [ ] Endpoint requires authentication
-        - [ ] Response includes id, title, date, price, and modality
-        - [ ] Tested in QA
+        - [ ] El endpoint retorna solo cursos activos
+        - [ ] El endpoint requiere autenticación
+        - [ ] La respuesta incluye id, título, fecha, precio y modalidad
+        - [ ] Probado en QA
     validations:
       required: true
 
   - type: dropdown
     id: area
     attributes:
-      label: Area
+      label: Área
       options:
         - Frontend
         - Backend
-        - Database
+        - Base de datos
         - DevOps
         - QA Automation
-        - Other
+        - Otro
     validations:
       required: true
 
   - type: input
     id: owner
     attributes:
-      label: Owner
-      placeholder: Example @developer
+      label: Responsable
+      placeholder: "Ejemplo: @desarrollador"
     validations:
       required: true
 
   - type: input
     id: reviewer
     attributes:
-      label: Reviewer
-      placeholder: Example @tech-lead
+      label: Revisor
+      placeholder: "Ejemplo: @tech-lead"
     validations:
       required: false
 
   - type: textarea
     id: dependencies
     attributes:
-      label: Dependencies / blockers
-      placeholder: Example Needs database model approved first.
+      label: Dependencias / bloqueos
+      placeholder: "Ejemplo: Requiere que el modelo de base de datos sea aprobado primero."
     validations:
       required: false

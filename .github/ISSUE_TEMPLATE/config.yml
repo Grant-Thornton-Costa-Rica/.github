@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Project documentation
+  - name: Documentación del proyecto
     url: https://github.com/Grant-Thornton-Costa-Rica/.github/wiki
-    about: Check the project documentation before creating a new issue.
+    about: Consulta la documentación del proyecto antes de crear un nuevo issue.

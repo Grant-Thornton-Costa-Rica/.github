@@ -1,57 +1,57 @@
-name: General Task
-description: For non-technical or mixed project tasks
+name: Tarea General
+description: Para tareas no técnicas o mixtas del proyecto
 title: "[Task]: "
 labels: ["type: task"]
 body:
   - type: textarea
     id: goal
     attributes:
-      label: Goal
-      description: What needs to be achieved?
-      placeholder: Example Prepare the approved list of course categories.
+      label: Objetivo
+      description: ¿Qué se debe lograr?
+      placeholder: "Ejemplo: Preparar la lista aprobada de categorías de cursos."
     validations:
       required: true
 
   - type: textarea
     id: expected-result
     attributes:
-      label: Expected result
-      description: What should exist when this is done?
-      placeholder: Example A document or spreadsheet with the final approved categories.
+      label: Resultado esperado
+      description: ¿Qué debe existir cuando esto esté terminado?
+      placeholder: "Ejemplo: Un documento u hoja de cálculo con las categorías finales aprobadas."
     validations:
       required: true
 
   - type: input
     id: owner
     attributes:
-      label: Owner
-      description: Who is responsible for moving this forward?
-      placeholder: Example Marketing team / @username
+      label: Responsable
+      description: ¿Quién es responsable de avanzar en esto?
+      placeholder: "Ejemplo: Equipo de Marketing / @usuario"
     validations:
       required: true
 
   - type: input
     id: reviewer
     attributes:
-      label: Reviewer or approver
-      description: Who confirms this is complete?
-      placeholder: Example @project-lead
+      label: Revisor o aprobador
+      description: ¿Quién confirma que está completo?
+      placeholder: "Ejemplo: @project-lead"
     validations:
       required: false
 
   - type: input
     id: due-date
     attributes:
-      label: Due date
-      description: When is this needed?
-      placeholder: Example 2026-06-20
+      label: Fecha límite
+      description: ¿Para cuándo se necesita?
+      placeholder: "Ejemplo: 2026-06-20"
     validations:
       required: false
 
   - type: textarea
     id: notes
     attributes:
-      label: Notes / links
-      description: Add any extra context, documents, screenshots, or references.
+      label: Notas / enlaces
+      description: Agrega cualquier contexto adicional, documentos, capturas de pantalla o referencias.
     validations:
       required: false

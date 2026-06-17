@@ -1,57 +1,57 @@
-name: Decision Needed
-description: For choices that block or affect project direction
+name: Decisión Requerida
+description: Para decisiones que bloquean o afectan la dirección del proyecto
 title: "[Decision]: "
 labels: ["type: decision", "status: needs-decision"]
 body:
   - type: textarea
     id: decision
     attributes:
-      label: Decision needed
-      description: What needs to be decided?
-      placeholder: Example Should course prices support discounts in phase 1?
+      label: Decisión requerida
+      description: ¿Qué necesita decidirse?
+      placeholder: "Ejemplo: ¿Los precios de los cursos deberían contemplar descuentos en la fase 1?"
     validations:
       required: true
 
   - type: textarea
     id: options
     attributes:
-      label: Options
+      label: Opciones
       placeholder: |
-        Option 1:
-        Option 2:
-        Option 3:
+        Opción 1:
+        Opción 2:
+        Opción 3:
     validations:
       required: true
 
   - type: textarea
     id: recommendation
     attributes:
-      label: Recommended option
-      description: What option do you recommend and why?
+      label: Opción recomendada
+      description: ¿Qué opción recomiendas y por qué?
     validations:
       required: false
 
   - type: input
     id: owner
     attributes:
-      label: Decision owner
-      description: Who must make or coordinate the decision?
-      placeholder: Example @project-owner / Finance / Marketing
+      label: Responsable de la decisión
+      description: ¿Quién debe tomar o coordinar la decisión?
+      placeholder: "Ejemplo: @project-owner / Finanzas / Marketing"
     validations:
       required: true
 
   - type: input
     id: needed-by
     attributes:
-      label: Needed by
-      placeholder: Example 2026-06-20
+      label: Necesaria para
+      placeholder: "Ejemplo: 2026-06-20"
     validations:
       required: false
 
   - type: textarea
     id: impact
     attributes:
-      label: Impact if delayed
-      placeholder: Example Backend and frontend cannot finalize the data model.
+      label: Impacto si se retrasa
+      placeholder: "Ejemplo: El backend y el frontend no podrán finalizar el modelo de datos."
     validations:
       required: false
