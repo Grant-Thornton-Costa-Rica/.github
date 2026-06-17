@@ -132,3 +132,84 @@ Creo que esto podría fallar cuando...
 Esto se ve bien, pero sugeriría...
 ¿Hay alguna razón por la que estamos haciendo X en lugar de Y?
 ```
+
+Evitar lenguaje como:
+```txt
+Esto está mal.
+Por qué hiciste esto?
+Incorrecto.
+Esto no tiene sentido.
+```
+
+## Comment priority
+
+Usar estos labels en comentarios del review cuando sea posible:
+```txt
+Required: Must be fixed before merge.
+Suggestion: Recommended, but not blocking.
+Question: Needs clarification.
+Nitpick: Small style/detail issue, not blocking.
+```
+
+Example:
+```txt
+Required: This endpoint needs an authorization check before returning user data.
+Suggestion: We could extract this logic into a helper because it is repeated twice.
+Question: Should this also handle inactive courses?
+Nitpick: Small typo in the variable name.
+```
+
+## Approval rules
+
+Un PR puede ser aprobado cuando:
+
+* El cambio cumple con el requerimiento
+* El código es entendible y mantenible
+* El feedback requerido fue resuelto
+* El autor explicó el testing realizado
+* Los checks de CI/CD pasan correctamente
+* No quedan preocupaciones de seguridad o pérdida de datos
+
+Para cambios de alto riesgo, solicitar un review adicional.
+
+Los cambios de alto riesgo incluyen:
+
+* Cambios de authentication o authorization
+* Cambios relacionados con pagos
+* Database migrations
+* Cambios de configuración de producción
+* Cambios sensibles de seguridad
+* Refactors grandes
+* Cambios que afectan a muchos usuarios
+
+## Cuándo usar Request changes
+
+Usar **Request changes** cuando:
+
+* El PR no cumple con el requerimiento
+* Hay un bug que debe corregirse
+* Hay un security issue
+* El cambio podría causar pérdida de datos
+* El código es demasiado riesgoso para hacer merge tal como está
+* Falta evidencia de testing para un cambio riesgoso
+
+Usar comments o suggestions en lugar de bloquear cuando el problema sea menor.
+
+## Merge checklist
+
+Antes de hacer merge, confirmar:
+
+* [ ] El PR tiene al menos 1 approval
+* [ ] Los required comments fueron resueltos
+* [ ] CI/CD passed
+* [ ] El testing fue documentado
+* [ ] El issue/task relacionado está vinculado
+* [ ] No se incluyen secrets ni datos sensibles
+* [ ] Release notes o deployment notes fueron incluidas cuando corresponde
+* [ ] El rollback plan fue incluido para cambios riesgosos
+
+## Review turnaround
+
+Los reviewers deben intentar revisar los PRs dentro de un día laboral.
+
+Los hotfixes urgentes pueden revisarse más rápido, pero aún requieren un PR, a menos que el technical lead apruebe explícitamente una excepción.
