@@ -21,33 +21,6 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: owner
-    attributes:
-      label: Responsable
-      description: ¿Quién es responsable de avanzar en esto?
-      placeholder: "Ejemplo: Equipo de Marketing / @usuario"
-    validations:
-      required: true
-
-  - type: input
-    id: reviewer
-    attributes:
-      label: Revisor o aprobador
-      description: ¿Quién confirma que está completo?
-      placeholder: "Ejemplo: @project-lead"
-    validations:
-      required: false
-
-  - type: input
-    id: due-date
-    attributes:
-      label: Fecha límite
-      description: ¿Para cuándo se necesita?
-      placeholder: "Ejemplo: 2026-06-20"
-    validations:
-      required: false
-
   - type: textarea
     id: notes
     attributes:
