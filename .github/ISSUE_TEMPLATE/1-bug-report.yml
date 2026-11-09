@@ -41,15 +41,16 @@ body:
   validations:
     required: true
 
-- type: dropdown
+- type: checkboxes
   id: environment
   attributes:
     label: Environment
+    description: Select all environments affected.
     options:
-      - Local
-      - QA
-      - Production
-      - Other
+      - label: Local
+      - label: QA
+      - label: Production
+      - label: Other
   validations:
     required: true
 
