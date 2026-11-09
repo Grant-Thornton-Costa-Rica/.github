@@ -40,12 +40,12 @@ body:
     attributes:
       label: Área
       options:
-        - Frontend
-        - Backend
-        - Base de datos
-        - DevOps / Infraestructura
-        - QA Automation
-        - Otro
+        - label: Frontend
+        - label: Backend
+        - label: Base de datos
+        - label: DevOps / Infraestructura
+        - label: QA Automation
+        - label: Otro
     validations:
       required: true
 
