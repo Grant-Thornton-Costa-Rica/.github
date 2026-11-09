@@ -34,35 +34,20 @@ body:
     validations:
       required: true
 
-  - type: dropdown
+  - type: checkboxes
     id: area
+    description: Selecciona todos los que apliquen.
     attributes:
       label: Área
       options:
         - Frontend
         - Backend
         - Base de datos
-        - DevOps
+        - DevOps / Infraestructura
         - QA Automation
         - Otro
     validations:
       required: true
-
-  - type: input
-    id: owner
-    attributes:
-      label: Responsable
-      placeholder: "Ejemplo: @desarrollador"
-    validations:
-      required: true
-
-  - type: input
-    id: reviewer
-    attributes:
-      label: Revisor
-      placeholder: "Ejemplo: @tech-lead"
-    validations:
-      required: false
 
   - type: textarea
     id: dependencies
