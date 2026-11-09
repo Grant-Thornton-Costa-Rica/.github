@@ -36,9 +36,9 @@ body:
 
   - type: checkboxes
     id: area
-    description: Selecciona todos los que apliquen.
     attributes:
       label: Área
+      description: Selecciona todos los que apliquen.
       options:
         - label: Frontend
         - label: Backend
