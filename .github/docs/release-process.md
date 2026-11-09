@@ -2,10 +2,7 @@
 
 ## Días estándar de release
 
-Los releases planificados a producción se realizan los:
-
-* Martes por la mañana
-* Jueves por la mañana
+Los releases planificados a producción o qa se realizan de lunes a jueves en la mañana.
 
 No se realizan releases planificados a producción los viernes, a menos que sean aprobados como hotfix.
 
