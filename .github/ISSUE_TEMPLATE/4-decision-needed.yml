@@ -31,23 +31,6 @@ body:
     validations:
       required: false
 
-  - type: input
-    id: owner
-    attributes:
-      label: Responsable de la decisión
-      description: ¿Quién debe tomar o coordinar la decisión?
-      placeholder: "Ejemplo: @project-owner / Finanzas / Marketing"
-    validations:
-      required: true
-
-  - type: input
-    id: needed-by
-    attributes:
-      label: Necesaria para
-      placeholder: "Ejemplo: 2026-06-20"
-    validations:
-      required: false
-
   - type: textarea
     id: impact
     attributes:
